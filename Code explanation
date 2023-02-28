@@ -1,0 +1,40 @@
+Code : 
+
+                                 // First of all we are using standard input / output library function , printf and scanf fuctions are in stdio.h library
+
+1.	#include<stdio.h>
+2.	#include<conio.h>
+
+                                 // Now we have created a array of "laptopprice" variable which have storage of 5 memory address and we have declared the values at the time of decleration .
+
+3.	float laptopprice[5]={ 122.20,14455.55,11111.11,22222.121,55555.55};
+
+                                 // Here the main program is staring 
+4.	int main()
+5.	{
+
+// here we have created variable of int data type which stores 0 value in it and used for laptop id .
+
+6.	int laptopid =0;
+
+                                 // now we have used for loop for iteration purpose it is itreted from "0" to "5" .
+                                 // it is used to print laptop id with its laptop price with respect to id.
+
+7.	for(laptopid = 0 ; laptopid<5;laptopid++)
+8.	{
+9.	printf("  laptop id  %d laptop price is   %.2f\n",laptopid,laptopprice[laptopid]);
+10.	}
+
+                                // After for loop we are using scanf function for taking new input into the array from user in array position 0 and 1 
+
+11.	scanf(" %f  %f ", &laptopprice[0],&laptopprice[1]);
+
+                                // after taking input from user it will be printed .
+12.	printf("\n The new price of laptop id : %.2f \t  %.2f\n\n",laptopprice[0],laptopprice[1]);
+
+13.	return 0;
+14.	}
+
+
+                               // thus we have studied how to initialize array then how to print it and how to take input from user and how to store in the array .
+
